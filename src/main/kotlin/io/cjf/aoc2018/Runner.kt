@@ -19,5 +19,7 @@ fun main(args: Array<String>) {
 fun registerAll() {
     registerSolverForPuzzle("day1p1", ::solveDay1P1)
     registerSolverForPuzzle("day1p2", ::solveDay1P2)
+    registerSolverForPuzzle("day2p1", ::solveDay2P1)
+    registerSolverForPuzzle("day2p2", ::solveDay2P2)
 }
 
