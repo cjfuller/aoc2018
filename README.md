@@ -5,5 +5,6 @@ Link to the [solutions directory](https://github.com/cjfuller/aoc2018/tree/maste
 Usage:
 
 `./gradlew test`: run the tests
+
 `./gradlew run --args='day1p2'`: run a specific puzzle (here, day 1, puzzle 2)
 
