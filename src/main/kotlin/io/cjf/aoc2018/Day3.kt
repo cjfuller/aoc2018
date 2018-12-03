@@ -7,14 +7,15 @@ data class Claim(
     val width: Int,
     val height: Int
 ) {
-    fun areaCoords(): Iterable<Pair<Int, Int>> {
-        val coords = mutableListOf<Pair<Int, Int>>()
-        (this.left until (this.left + this.width)).forEach { x ->
-            (this.top until (this.top + this.height)).forEach { y ->
-                coords.add(x to y)
+    fun areaCoords(): Sequence<Pair<Int, Int>> {
+        val coord = this
+        return sequence {
+            (coord.left until (coord.left + coord.width)).forEach { x ->
+                (coord.top until (coord.top + coord.height)).forEach { y ->
+                    yield(x to y)
+                }
             }
         }
-        return coords
     }
 }
 
