@@ -36,8 +36,7 @@ fun layoutClaims(claims: List<Claim>): Map<Pair<Int, Int>, Int> {
     val layout: MutableMap<Pair<Int, Int>, Int> = mutableMapOf()
 
     claims.forEach { claim ->
-        claim.areaCoords().forEach { (x, y) ->
-            val coord = x to y
+        claim.areaCoords().forEach { coord ->
             val currVal = layout[coord] ?: 0
             layout[coord] = currVal + 1
         }
