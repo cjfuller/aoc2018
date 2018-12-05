@@ -25,5 +25,7 @@ fun registerAll() {
     registerSolverForPuzzle("day3p2", ::solveDay3P2)
     registerSolverForPuzzle("day4p1", ::solveDay4P1)
     registerSolverForPuzzle("day4p2", ::solveDay4P2)
+    registerSolverForPuzzle("day5p1", ::solveDay5P1)
+    registerSolverForPuzzle("day5p2", ::solveDay5P2)
 }
 
