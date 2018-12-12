@@ -6,7 +6,7 @@
 
 plugins {
     kotlin("jvm") version "1.3.10"
-
+    id("com.github.johnrengelman.shadow") version "4.0.3"
     // Apply the application to add support for building a CLI application
     application
 }
@@ -21,6 +21,7 @@ dependencies {
     // Use the Kotlin JDK 8 standard library
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.1")
+    implementation("com.github.holgerbrandl:kravis:0.5")
     testImplementation("io.kotlintest:kotlintest-runner-junit5:3.1.10")
     testImplementation("org.jetbrains.kotlin:kotlin-reflect:1.3.10")
 }
